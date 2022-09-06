@@ -32,11 +32,6 @@ class SearchBar extends React.Component {
             />
           </div>
         </form>
-        <h2>
-          <a href="./index.html" id="logo">
-            Pinterest+
-          </a>
-        </h2>
       </div>
     );
   }
