@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./SearchBar.css";
+
 class SearchBar extends React.Component {
   state = {
-    term: "Hi there!",
+    term: "...",
   };
   onFormSubmit = (e) => {
     e.preventDefault();
@@ -13,16 +15,28 @@ class SearchBar extends React.Component {
       <div className="ui segment">
         <form className="ui form" onSubmit={this.onFormSubmit}>
           <div className="field">
-            <label>Image search</label>
+            {/* <label>Image search</label> */}
+            <button type="submit" className="search-btn">
+              <i className="fas fa-search"></i>
+            </button>
             <input
+              maxLength="15"
+              minLength="3"
+              className="field-input"
               type="text"
-              value={this.state.term}
+              placeholder="Search..."
+              autoComplete="on"
               onChange={(e) => {
                 this.setState({ term: e.target.value });
               }}
             />
           </div>
         </form>
+        <h2>
+          <a href="./index.html" id="logo">
+            Pinterest+
+          </a>
+        </h2>
       </div>
     );
   }

@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --dark: #17181a;
+  --dark-blue: #020024;
+  --light: #fcfbfe;
+  --gray: #949393;
+  --gray-light: #d3d3d3;
+  --blue: #567ce4;
+  --darkest-purple: #5b23a9;
+  --dark-purple: #6e4ba0;
+  --purple: #a77ce4;
+  --orange: #ff8b5d;
+  --canvas: #eeebf4;
+
+  background: var(--canvas);
+  height: 100vh;
+}
